@@ -1,4 +1,4 @@
-# Quisk_on_ubuntu20_04
+# Quisk_on_ubuntu_20_04
 This will have the source code of how to get Quisk working on Ubuntu 20.04 With hackrf and rtl-sdr dongle
 # Required Dependency
 Python3 and Pip for Python 3
