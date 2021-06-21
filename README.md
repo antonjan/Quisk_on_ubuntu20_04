@@ -38,4 +38,4 @@ I had to run python3 with sudo and explisit python path to quisk for it to work.
   Screenshot 2
   ![hackrf config](Quisk_audio_hackrf_5.png?raw=true "hackrf config")<br>
   
-  The bat file is what I used to start quisk. 
+  The sh file is what I used to start quisk. 
