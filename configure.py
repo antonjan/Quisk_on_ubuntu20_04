@@ -2035,7 +2035,7 @@ class RadioSound(BaseWindow):		# The Sound page in the second-level notebook for
       (1, "Raw Digital Output", "This sends the received I/Q data to another program."),
       (1, "Digital Rx1 Output", "This sends sub-receiver 1 output to another program."),
     )
-    choices = (("44100","48000", "96000", "192000"), ("0", "1"), ("0", "1"), (" ", "0", "1"))
+    choices = (("8000", "44100","48000", "96000", "192000"), ("0", "1"), ("0", "1"), (" ", "0", "1"))
     r = 0
     if "SoftRock" in self.radio_dict['hardware_file_type']:		# Samples come from sound card
       softrock = True
@@ -2049,14 +2049,14 @@ class RadioSound(BaseWindow):		# The Sound page in the second-level notebook for
         value = ''
       data_name = self.sound_names[r][0]
       if r == 0:
-        cb = self.AddComboCtrl(2, value, choices=("44100", "48000", "96000", "192000"), right=True)
+        cb = self.AddComboCtrl(2, value, choices=("8000", "44100", "48000", "96000", "192000"), right=True)
       if r == 1:
         cb = self.AddComboCtrl(2, value, choices=("48000", "44100", "8000"), right=True, no_edit=True)
       if softrock:
         if r == 2:
-          cb = self.AddComboCtrl(2, value, choices=("48000", "96000", "192000"), right=True)
+          cb = self.AddComboCtrl(2, value, choices=("8000", "48000", "96000", "192000"), right=True)
         if r == 3:
-          cb = self.AddComboCtrl(2, value, choices=("48000", "96000", "192000"), right=True)
+          cb = self.AddComboCtrl(2, value, choices=("8000", "48000", "96000", "192000"), right=True)
       else:
         if r == 2:
           cb = self.AddComboCtrl(2, '', choices=("",), right=True)
